@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Arpeeta 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #1b1b2f, #0f0f1a);
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+p {
+    opacity: 0.85;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 14px 32px;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.yes {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: #fff;
+}
+
+.no {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Birthday Page */
+#birthdayPage {
+    display: none;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero {
+    padding: 80px 20px 40px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.hero span {
+    color: #ff8fb1;
+}
+
+.message {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    line-height: 1.9;
+    font-size: 1.05rem;
+    opacity: 0.9;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    transition: transform 0.4s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    text-align: center;
+    padding: 40px 20px 60px;
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+.heart {
+    color: #ff5c8a;
+}
+</style>
+</head>
+
+<body>
+
+<!-- First Screen -->
+<div class="center" id="startPage">
+    <h1>Hey Arpeeta 💫</h1>
+    <p>
+        Today is not just any day…  
+        It’s the day the world became brighter.  
+        Do you want to see what I made specially for you?
+    </p>
+
+    <div class="buttons">
+        <button class="yes" onclick="showBirthday()">Yes, show me 💖</button>
+        <button class="no" onclick="alert('Come on… you know you want to 😌')">No 🙈</button>
+    </div>
+</div>
+
+<!-- Birthday Page -->
+<div id="birthdayPage">
+
+    <div class="hero">
+        <h2>Happy Birthday <span>Arpeeta</span> 🎉</h2>
+        <p>To someone who makes moments warmer and smiles brighter</p>
+    </div>
+
+    <div class="gallery">
+        <img src="IMG_20251227_203329.jpg">
+        <img src="IMG_20251227_203331.jpg">
+        <img src="Snapchat-1048676776.jpg">
+        <img src="Snapchat-1224667424.jpg">
+        <img src="Snapchat-1239259312.jpg">
+        <img src="Snapchat-1536230219.jpg">
+    </div>
+
+    <div class="message">
+        Dear Arpeeta,<br><br>
+
+        On this beautiful day, I just want you to pause for a moment and realize  
+        how incredibly special you are.  
+        The kindness you carry, the warmth in your smile,  
+        and the light you unknowingly spread — it truly matters.<br><br>
+
+        May this new year of your life bring you calm on difficult days,  
+        courage when you feel unsure,  
+        success that feels fulfilling,  
+        and happiness that stays longer than moments.<br><br>
+
+        I hope you chase your dreams fearlessly,  
+        love yourself unapologetically,  
+        and always remember how deeply valued you are.<br><br>
+
+        The world is a better place with you in it,  
+        and I’m genuinely grateful for you.<br><br>
+
+        Happy Birthday once again, Arpeeta.  
+        May every wish you make today find its way back to you. 💖
+    </div>
+
+    <div class="footer">
+        Made with <span class="heart">♥</span> just for you
+    </div>
+
+</div>
+
+<script>
+function showBirthday() {
+    document.getElementById("startPage").style.display = "none";
+    document.getElementById("birthdayPage").style.display = "block";
+}
+</script>
+
+</body>
+</html>
